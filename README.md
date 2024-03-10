@@ -28,7 +28,7 @@ git clone https://github.com/Kaouthar15/fotoflex.git
 
 2. Install dependencies:
 
-cd fotoflex
+cd fotoflex <br>
 npm install
 
 
