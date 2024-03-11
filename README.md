@@ -17,7 +17,7 @@ Welcome to FotoFlex! I, along with @HuDa198, have created this React application
 - **React Router:** Implemented routing for seamless navigation between different editing features.
 - **React Hooks:** Leveraged hooks like useState and useEffect for state management and side effects.
 - **Styled Components:** Utilized styled components for clean and modular CSS.
-- **React Dropzone:** Integrated React Dropzone for effortless drag-and-drop image uploading.
+
 
 ## Usage
 
