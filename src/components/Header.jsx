@@ -44,7 +44,6 @@ export default function Header({ toggleDarkMode, darkMode }) {
             >
               Home
             </li>
-            <li className={darkMode ? styles.darkListItem : ""}>Features</li>
             <li className={darkMode ? styles.darkListItem : ""}>Learn</li>
             <button onClick={handleNavigateEditor}>New Image</button>
             <div style={{ cursor: "pointer" }} onClick={toggleDarkMode}>
