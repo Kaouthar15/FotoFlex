@@ -186,7 +186,7 @@
   }
 }
 
-@media only screen and (min-device-width: 2000px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)   {
   .image {
     align-items: center;
     background-color: #b1c4d6;
