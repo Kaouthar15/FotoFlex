@@ -16,10 +16,13 @@ export default function Header({ toggleDarkMode, darkMode }) {
     navigate("/editor");
   }
 
+  function handleNavigateLearn() {
+    navigate("/learn");
+  }
   return (
     <>
       <header
-        className={`${scrollY !== 0 ? styles.fixedHeader : styles.head} ${
+        className={`${scrollY !== 0  ? styles.fixedHeader : styles.head} ${
           darkMode ? styles.darkMode : ""
         }`}
       >
@@ -38,13 +41,8 @@ export default function Header({ toggleDarkMode, darkMode }) {
         </div>
         <div>
           <ul>
-            <li
-              className={darkMode ? styles.darkListItem : ""}
-              onClick={handleNavigateHome}
-            >
-              Home
-            </li>
-            <li className={darkMode ? styles.darkListItem : ""}>Learn</li>
+            <li className={darkMode ? styles.darkListItem : ""}>Home </li>
+            <li className={darkMode ? styles.darkListItem : ""} onClick={handleNavigateLearn}>Learn</li>
             <button onClick={handleNavigateEditor}>New Image</button>
             <div style={{ cursor: "pointer" }} onClick={toggleDarkMode}>
               {darkMode ? (
