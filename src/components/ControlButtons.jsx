@@ -37,7 +37,6 @@ const ImageControls = ({ crop, setState, details, state, setZoom, zoom }) => {
   const handleImageHandle = (e) => imageHandle(e, setState, state, storeData);
   const handleImageCrop = () => {
     if (crop.width && crop.height) {
-      // Check if crop selection exists
       imageCrop(details, crop, state, setState);
     }
   };
