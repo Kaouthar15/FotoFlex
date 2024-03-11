@@ -137,7 +137,7 @@
 .image.darkMode {
   box-shadow: 0 0 2px #d1cdcd;
 }
-@media only screen and (max-device-width: 1366px) 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  
 
 {
   .image {
@@ -186,7 +186,7 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)   {
+@media only screen  and (min-device-width: 2000px){
   .image {
     align-items: center;
     background-color: #b1c4d6;
