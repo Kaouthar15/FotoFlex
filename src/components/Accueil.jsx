@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./style/acceuil.module.css";
 import { ScaleLoader } from "react-spinners";
 import Header from "./Header";
+import Footer from "./footer";
 
 export default function Acceuil() {
   const navigate = useNavigate();
@@ -55,7 +56,7 @@ export default function Acceuil() {
                 </div>
               </div>
               <div className={styles.ttr}>
-                <h1>Why use FotoFlex</h1>
+                <h1>Why use FotoFlex?</h1>
                 <p>
                   FotoFlex is perfect for resizing images for social media,
                   creating graphics for your website, make your images more
@@ -76,15 +77,12 @@ export default function Acceuil() {
                 <div className={styles.imgDiv}>
                   <img src={require("../images/opt2.jpg")} alt="img" />
                   <h1>Get started in seconds</h1>
-                  <p className={`${darkMode ? styles.darkP : styles.P}`}>Go to FotoFlex.io and start editing now</p>
+                  <p className={`${darkMode ? styles.darkP : styles.P }`}>Go to FotoFlex.io and start editing now</p>
                 </div>
               </div>
             </div>
           </div>
-          <footer>
-            <hr />
-            <p align="center" className={`${darkMode ? styles.darkFooter : ""}`}>FotoFlex&copy;2024</p>
-          </footer>
+          <Footer darkMode={darkMode}/>
         </>
       )}
     </div>
