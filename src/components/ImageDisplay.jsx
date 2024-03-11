@@ -38,27 +38,37 @@ const ImageDisplay = ({ state, crop, setCrop, setDetails, zoom, darkMode }) => {
     }));
   };
 
-  const handleSaveImage = () => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
+const handleSaveImage = () => {
+  const canvas = canvasRef.current;
+  const ctx = canvas.getContext("2d");
 
-    const img = new Image();
-    img.crossOrigin = "anonymous";
-    img.onload = () => {
-      canvas.width = img.width;
-      canvas.height = img.height;
+  const img = new Image();
+  img.crossOrigin = "anonymous";
+  img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
 
-      ctx.filter = `brightness(${state.brightness}%) sepia(${state.sepia}%) saturate(${state.saturate}%) contrast(${state.contrast}%) grayscale(${state.grayscale}%) hue-rotate(${state.hueRotate}deg)`;
-      ctx.drawImage(img, 0, 0);
+    ctx.filter = `brightness(${state.brightness}%) sepia(${state.sepia}%) saturate(${state.saturate}%) contrast(${state.contrast}%) grayscale(${state.grayscale}%) hue-rotate(${state.hueRotate}deg)`;
 
-      ctx.font = `${textStyle.fontSize} ${textStyle.fontFamily}`;
-      ctx.fillStyle = textStyle.color;
-      ctx.fillText(text, textPosition.x, textPosition.y);
 
-      saveImage(canvas.toDataURL(), state.image, text, textStyle, textPosition);
-    };
-    img.src = state.image;
+    ctx.translate(canvas.width / 2, canvas.height / 2);
+    ctx.rotate((state.rotate * Math.PI) / 180);
+    ctx.scale(state.vartical * zoom, state.horizental * zoom);
+    ctx.translate(-canvas.width / 2, -canvas.height / 2);
+
+    ctx.drawImage(img, 0, 0);
+
+    ctx.font = `${textStyle.fontSize} ${textStyle.fontFamily}`;
+    ctx.fillStyle = textStyle.color;
+    ctx.fillText(text, textPosition.x, textPosition.y);
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+    saveImage(canvas.toDataURL(), state.image, text, textStyle, textPosition);
   };
+  img.src = state.image;
+};
+
 
   const handleMouseDown = (e) => {
     const startX = e.pageX - textPosition.x;
