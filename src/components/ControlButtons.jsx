@@ -31,7 +31,7 @@ const ImageControls = ({ crop, setState, details, state, setZoom, zoom }) => {
 
   const handleZoomOut = () => {
     if (zoom > 0.1) {
-      setZoom(zoom - 0.1);
+      setZoom(Math.max(0.1, zoom - 0.1)); 
     }
   };
   const handleImageHandle = (e) => imageHandle(e, setState, state, storeData);
@@ -66,6 +66,7 @@ const ImageControls = ({ crop, setState, details, state, setZoom, zoom }) => {
           className={styles.zoomIn}
           title="Zoom In"
           onClick={handleZoomIn}
+          disabled={zoom >= 3} 
         >
           <FaPlus />
         </button>
@@ -81,6 +82,7 @@ const ImageControls = ({ crop, setState, details, state, setZoom, zoom }) => {
           className={styles.zoomOut}
           title="Zoom Out"
           onClick={handleZoomOut}
+          disabled={zoom <= 0.1} 
         >
           <FaMinus />
         </button>
