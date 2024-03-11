@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap");
+* {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+}
+
+.image_section {
+  margin-left: 8px;
+  width: 350px;
+  background-color: #f0f0f0;
+  height: 300px;
+  margin-left: 100px;
+}
+.image_editor {
+  width: 100vw;
+  height: 100vh;
+}
+.loader_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.darkMode {
+  background-color: #272d3c;
+  color: #f7fafc;
+}

@@ -1,0 +1,234 @@
+.image {
+  align-items: center;
+  background-color: #b1c4d6;
+  display: flex;
+  height: 400px;
+  width: 650px;
+  border-radius: 3px;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 150px;
+  left: 485px;
+  margin: auto;
+  border: dashed;
+  border-color: #011a4e;
+  box-shadow: 0 0 2px #d1cdcd, 0 0 10px #c8d0d8, 0 0 25px #beb0c4;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.image label {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 220px;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.image label:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.addText {
+  padding: 10px;
+  background-color: #ececf4;
+  border: none;
+  border-bottom: 0.5px solid #36395a;
+  cursor: pointer;
+  margin-left: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.addText:hover {
+  background-color: #9e9aaf;
+}
+
+.addText:active {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.saveImage {
+  position: absolute;
+  top: 600px;
+  left: 930px;
+  background-color: #011a4e;
+  color: #f1f1f1;
+  cursor: pointer;
+  border: none;
+  padding: 9px;
+  border-radius: 8px;
+}
+.saveImage:hover {
+  background-color: #deb4b9;
+}
+.saveImage:active {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disabled .crop svg {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.text2 input[type="text"],
+.text2 input[type="number"],
+.text2 select,
+.text2 input[type="color"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #e9e9f8;
+}
+
+.text2 input[type="color"] {
+  padding: 0;
+}
+
+.text2 button {
+  width: 200px;
+  padding: 8px 16px;
+  background-color: #011a4e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text2 button:hover {
+  background-color: #e9e9f8;
+  color: #011a4e;
+}
+.text2 button:active {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+/* Position adjustments */
+.text2 {
+  background-color: #e9e9f8;
+  border-radius: 5px;
+  position: absolute;
+  top: 200px;
+  left: 130px;
+  width: 220px;
+  height: 300px;
+}
+
+.image.darkMode {
+  box-shadow: 0 0 2px #d1cdcd;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)   
+
+{
+  .image {
+    align-items: center;
+    background-color: #b1c4d6;
+    display: flex;
+    height: 600px;
+    width: 400px;
+    border-radius: 3px;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    top: 180px;
+    left: 380px;
+    margin: auto;
+    border: dashed;
+    border-color: #011a4e;
+    box-shadow: 0 0 2px #d1cdcd, 0 0 10px #c8d0d8, 0 0 25px #beb0c4;
+  }
+  .image label {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+  }
+  .saveImage {
+    position: absolute;
+    top: 850px;
+    left: 700px;
+    background-color: #011a4e;
+    color: #f1f1f1;
+    cursor: pointer;
+    border: none;
+    padding: 9px;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (min-device-width: 2000px) {
+  .image {
+    align-items: center;
+    background-color: #b1c4d6;
+    display: flex;
+    height: 650px;
+    width: 1000px;
+    border-radius: 3px;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    margin: auto;
+    border: dashed;
+    border-color: #011a4e;
+    box-shadow: 0 0 2px #d1cdcd, 0 0 10px #c8d0d8, 0 0 25px #beb0c4;
+  }
+  .image label {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 380px;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+  }
+  .saveImage {
+    position: absolute;
+    top: 950px;
+    left: 1300px;
+    background-color: #011a4e;
+    color: #f1f1f1;
+    cursor: pointer;
+    border: none;
+    padding: 9px;
+    border-radius: 8px;
+  }
+}
