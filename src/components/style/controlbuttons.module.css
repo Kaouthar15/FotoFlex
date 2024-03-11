@@ -1,0 +1,144 @@
+.undo,
+.redo {
+  background-color: #ececf4;
+  border: none;
+  padding: 9px 12px;
+  position: absolute;
+  top: 600px;
+  cursor: pointer;
+}
+.undo:hover,
+.redo:hover {
+  background-color: #b1c4d6;
+}
+.undo {
+  border-top-left-radius: 8px;
+  left: 770px;
+}
+.redo {
+  border-bottom-right-radius: 8px;
+  left: 820px;
+}
+.zoomIn,
+.zoomOut {
+  background-color: #ececf4;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  position: relative;
+}
+.zoomIn {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.zoomOut {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.zoomIn:hover,
+.zoomOut:hover,
+.spanZoom:hover {
+  background-color: #b1c4d6;
+  transform: scaleZ(1.05);
+}
+.zoomIn:active,
+.zoomOut:active {
+  background-color: #deb4b9;
+  transform: scaleZ(1.05);
+}
+button:active {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.spanZoom {
+  background-color: #ececf4;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.zooming {
+  position: absolute;
+  top: 600px;
+  left: 570px;
+}
+
+.crop {
+  padding: 10px;
+  background-color: #ececf4;
+  cursor: pointer;
+  border: none;
+  margin-left: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disabled .crop svg {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.crop:hover {
+  background-color: #9e9aaf;
+}
+.hiddenChoose {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  
+{
+  .zooming {
+    position: absolute;
+    top: 850px;
+    left: 340px;
+  }
+  .undo {
+    border-top-left-radius: 8px;
+    left: 540px;
+  }
+  .redo {
+    border-bottom-right-radius: 8px;
+    left: 590px;
+  }
+  .undo,
+  .redo {
+    background-color: #ececf4;
+    border: none;
+    padding: 9px 12px;
+    position: absolute;
+    top: 850px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-device-width: 2000px) {
+  .zooming {
+    position: absolute;
+    top: 950px;
+    left: 700px;
+  }
+  .undo {
+    border-top-left-radius: 8px;
+    left: 1030px;
+  }
+  .redo {
+    border-bottom-right-radius: 8px;
+    left: 1080px;
+  }
+  .undo,
+  .redo {
+    background-color: #ececf4;
+    border: none;
+    padding: 9px 12px;
+    position: absolute;
+    top: 950px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,68 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.App-header {
+  padding: 20px;
+}
+
+.result-container {
+  background-color: transparent;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+
+.result-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+input[type='text'],
+select,
+button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.icon {
+  margin-left: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.result-container:hover .icon {
+  opacity: 1;
+}
+.user-input {
+  margin-top: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
