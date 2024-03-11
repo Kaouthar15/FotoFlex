@@ -1,7 +1,7 @@
 # FotoFlex: Your Ultimate Image Editing Companion
 
 Welcome to FotoFlex! I, along with @HuDa198, have created this React application to serve as your go-to solution for all your image editing needs. FotoFlex empowers users to effortlessly crop, add text, adjust filters, and unleash their creativity on images.
-![App Demo](demo.gif)
+![App Demo](icons.png)
 
 ## Features
 
