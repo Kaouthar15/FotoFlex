@@ -70,7 +70,7 @@ function SideBar({ filterElement, property, setProperty, state, setState }) {
               </div>
               <div className={styles.filter_slider}>
                 <div className={styles.label_bar}>
-                  <label htmlFor="range1">Rotate</label>
+                  <label htmlFor="range1">Adjust</label>
                   <span>{state[property.name]}%</span>
                 </div>
                 <input
