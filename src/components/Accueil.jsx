@@ -66,24 +66,24 @@ export default function Acceuil() {
                 <div className={styles.imgDiv}>
                   <img src={require("../images/opt1.jpg")} alt="img" />
                   <h1>Simple interface</h1>
-                  <p>Just upload your image and start editing</p>
+                  <p className={`${darkMode ? styles.darkP : styles.P}`}>Just upload your image and start editing</p>
                 </div>
                 <div className={styles.imgDiv}>
                   <img src={require("../images/opt3.png")} alt="img" />
                   <h1>No sign up required</h1>
-                  <p>No account needed, just upload and edit</p>
+                  <p className={`${darkMode ? styles.darkP : styles.P}`}>No account needed, just upload and edit</p>
                 </div>
                 <div className={styles.imgDiv}>
                   <img src={require("../images/opt2.jpg")} alt="img" />
                   <h1>Get started in seconds</h1>
-                  <p>Go to FotoFlex.io and start editing now</p>
+                  <p className={`${darkMode ? styles.darkP : styles.P}`}>Go to FotoFlex.io and start editing now</p>
                 </div>
               </div>
             </div>
           </div>
           <footer>
             <hr />
-            <p align="center">FotoFlex&copy;2024</p>
+            <p align="center" className={`${darkMode ? styles.darkFooter : ""}`}>FotoFlex&copy;2024</p>
           </footer>
         </>
       )}
