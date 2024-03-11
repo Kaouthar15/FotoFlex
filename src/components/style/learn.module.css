@@ -1,0 +1,38 @@
+.loader_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.body{
+    width: 100%;
+    height: 100%;
+    margin: 6% 0px;
+    padding:0px 2% ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.prph{
+    width:600px;
+    height: 300px;
+    margin-top: 10%;
+    text-align: justify;
+    padding-right: 2%;
+    background-size: cover;
+    background-position: top;
+    color: #011a4e;
+}
+
+.img img{
+    width:800px;
+    height: 500px;
+    border:  .5px  black dashed;
+}
+.darkMode {
+    background-color: #272d3c;
+    color: #f1f1f1;
+  }
+.darkMode .prph{
+    color: #f1f1f1;
+}
