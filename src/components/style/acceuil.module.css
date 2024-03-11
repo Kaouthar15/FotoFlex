@@ -217,14 +217,14 @@ hr {
   line-height: 24px;
   margin: 10px 0px 10px 0px;
 }
-.imgDiv p {
+.P {
   font-size: 14px;
   color: #4f7396;
 }
 
 footer {
-  color: #4f7396;
-  margin: 20px 0px;
+  margin: 20px 0px 0px 0px;
+  padding-bottom:20px;
 }
 footer p {
   margin-left: 20px;
@@ -246,6 +246,10 @@ footer p {
 }
 .fixedHeader .darkListItem {
   color: #f1f1f1;
+}
+.darkP , .darkFooter{
+  font-size: 14px;
+  color:#f1f1f1;
 }
 
 @media only screen and (max-width: 768px) {
