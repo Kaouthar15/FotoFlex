@@ -42,7 +42,6 @@
   --b: 0.1em;
   --c: #4f7396;
   cursor: pointer;
-
   color: #0000;
   padding-block: var(--b);
   background: linear-gradient(var(--c) 50%, #011a4e 0) 0%
@@ -222,13 +221,20 @@ hr {
   color: #4f7396;
 }
 
-footer {
-  margin: 20px 0px 0px 0px;
-  padding-bottom:20px;
+.footer {  
+  height: 10vh;
+  margin: 20px 0px  0px  0px;
+  padding-bottom: 23px;
 }
-footer p {
-  margin-left: 20px;
+
+.F {
   font-size: 18px;
+  color: #011a4e;
+}
+
+.darkFooter{
+  font-size: 18px;
+  color: #f1f1f1;
 }
 
 .loader_container {
@@ -247,10 +253,7 @@ footer p {
 .fixedHeader .darkListItem {
   color: #f1f1f1;
 }
-.darkP , .darkFooter{
-  font-size: 14px;
-  color:#f1f1f1;
-}
+
 
 @media only screen and (max-width: 768px) {
   .navs {
