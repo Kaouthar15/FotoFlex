@@ -1,4 +1,3 @@
-// verticalFlip.jsx
 const verticalFlip = (state, setState, storeData) => {
     setState({
         ...state,
