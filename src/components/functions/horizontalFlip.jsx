@@ -1,4 +1,3 @@
-// horizontalFlip.jsx
 const horizontalFlip = (state, setState, storeData) => {
     setState({
         ...state,
