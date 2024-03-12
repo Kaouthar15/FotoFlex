@@ -52,7 +52,7 @@ export default function Acceuil() {
                   >
                     Start Editing
                   </button>
-                  <button>Learn More</button>
+                  <button onClick={() => navigate("learn")}>Learn More</button>
                 </div>
               </div>
               <div className={styles.ttr}>
