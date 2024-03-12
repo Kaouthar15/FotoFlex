@@ -1,4 +1,3 @@
-// leftRotate.jsx
 const leftRotate = (state, setState, storeData) => {
     setState({
         ...state,
