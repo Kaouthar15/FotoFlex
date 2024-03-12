@@ -1,4 +1,3 @@
-// imageCrop.jsx
 const imageCrop = (details, crop, state, setState) => {
     const canvas = document.createElement('canvas')
     const scaleX = details.naturalWidth / details.width
