@@ -1,4 +1,3 @@
-// rightRotate.jsx
 const rightRotate = (state, setState, storeData) => {
     setState({
         ...state,
