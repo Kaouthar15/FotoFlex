@@ -1,4 +1,3 @@
-// imageHandle.jsx
 const imageHandle = (e, setState, state, storeData) => {
     if (e.target.files.length !== 0) {
 
