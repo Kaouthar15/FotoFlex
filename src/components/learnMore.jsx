@@ -37,14 +37,11 @@ export default function LearnMore() {
       
         
         <div className={styles.prph}>
-          FotoFlex provides a user-friendly platform for all your image
-              editing needs, ensuring seamless functionality across devices of
-              all sizes. With no sign-up required, you can dive straight into
-              editing your photos hassle-free. FotoFlex offers a fluid and intuitive
-              editing experience. Explore our range of features including
-              cropping, filters, adjustments, adding text, undo and redo
-              options, zooming, rotating, and flipping, all designed to enhance
-              your images effortlessly.
+          FotoFlex provides a seamless and user-friendly platform for all your image editing needs. 
+          With no sign-up required, you can effortlessly dive into enhancing your photos.
+          Enjoy a fluid and intuitive editing experience with a range of features such as cropping, 
+          filters, adjustments, adding text, undo and redo options, zooming, rotating,
+          and flipping, all designed to elevate your images effortlessly.
         </div>
         <div className={styles.img}>
             <img src={require('../images/learn.png')} alt="img"  />
