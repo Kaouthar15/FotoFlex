@@ -1,4 +1,3 @@
-// inputHandle.jsx
 const inputHandle = (e, setState, state) => {
     setState({
         ...state,
