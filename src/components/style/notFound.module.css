@@ -1,0 +1,23 @@
+
+.accueil_body{
+    width: 100vw;
+    height: 100vh;  
+}
+.body{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .darkMode {
+    background-color: #272d3c;
+    color: #f1f1f1;
+    
+  }
+  
